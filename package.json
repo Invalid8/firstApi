@@ -2,7 +2,7 @@
   "name": "newapi",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "functions/index.js",
   "scripts": {
     "build": "netlify-lambda build express",
     "start": "nodemon ./bin/www"
