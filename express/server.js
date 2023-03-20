@@ -8,8 +8,8 @@ const router = express.Router();
 
 app.use(express.static(__dirname + "/public"));
 
-app.use("/", require("./router/index.js"));
-app.use("/api", require("./router/api/data1.js"));
+app.use("/", require("../router/index.js"));
+app.use("/api", require("../router/api/data1.js"));
 
 app.use(bodyParser.json());
 app.use("/.netlify/functions/server", router); // path must route to lambda (express/server.js)
